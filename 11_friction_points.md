@@ -7,7 +7,10 @@ renku primitives are immutable, but when doing cross-project references it's not
 I think part of the "problem" is that the ZODB used is always references within
 the boundaries of a single project, and each git repo has its own
 lineage tree for provenance. Since methods import datasets, one has to traverse
-`sameAs` relations (Almut code does this, and it works, but it seems messy).
+`sameAs` relations (Almut code does this, and it works beautifully so far, but
+it might be a bit messy to maintain in the future: queries tend to grow more expensive,
+branches/rollouts can happen, and I think we all agree that a more
+straightforward way of referencing a dataset might be preferred).
 
 On the other hand, there's no way to automatically propagate changes in the
 dataset "downwards" to methods that use the dataset - or to check that a method
