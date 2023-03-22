@@ -38,4 +38,8 @@ Example: https://renkulab.io/gitlab/omnibenchmark/iris_example/iris-random-fores
 ## pointers
 
 I think some improvements can be made to execution.
-https://www.digitalocean.com/community/tutorials/how-to-build-docker-images-and-host-a-docker-image-repository-with-gitlab#step-3-%E2%80%94-updating-gitlab-ci-yaml-and-building-a-docker-image
+
+perhaps "docker run", not clone+run from image...
+
+* https://www.digitalocean.com/community/tutorials/how-to-build-docker-images-and-host-a-docker-image-repository-with-gitlab#step-3-%E2%80%94-updating-gitlab-ci-yaml-and-building-a-docker-image
+* use renku docker images as base, but derive other stuff: https://github.com/SwissDataScienceCenter/renkulab-docker
