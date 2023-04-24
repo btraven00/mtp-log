@@ -36,3 +36,8 @@ vs. implicit datasets, permanent vs. ephemeral datasets)
 * Annotating data imports with the original dataset repo commit might be a good heuristic (to ensure all filters and methods are running from the same revision of the dataset)
 
 
+## implementation note
+
+* omnibenchmark currently updates the inputs in here: https://github.com/omnibenchmark/omnibenchmark-py/blob/main/omnibenchmark/core/omni_object.py#L183
+* this basically finds the dataset (by keyword) and updates stuff
+* a simple modification is to annotate each activity run with the upstream dataset revision
